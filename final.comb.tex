@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+% decent example of doing mathematics and proofs in LaTeX.
+% An Incredible degree of information can be found at
+% http://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{amsmath}
+\usepackage{upgreek}
+\usepackage{amsthm,amssymb}
+\usepackage{enumitem, mathtools}
+
+
+%\renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\contradict}{\Rightarrow\!\Leftarrow}
+
+\begin{document}
+	\title{\vspace{-2.0cm}Midterm Study Guide Real Analysis}
+	\maketitle
+	
+	\section{ch1}
+	\subsection{sup and inf 1.8}
+	\bf DEF: Suppose $ S $ is an ordered set, $ E \subset S $, and $ E $ is bounded above. $ \alpha = \sup (S) $ has the following properties:
+	\begin{enumerate}[label=(i.),leftmargin=.5in]
+		\item $ \alpha $ is an upper bound of $ E $.
+		\item if $ x < \alpha $ then $ x $ is not an upper bound of $ E $.
+	\end{enumerate}
+	\subsection{Least-upper-bound property 1.10}
+	$ \mathbf{ DEF:} $ An ordered set $ S $ is said to have the least-upper-bound property if the following is true:
+	$ E\subset S, E\neq\emptyset $, and $ E$ is bounded above, then $ sup (E )\in S $
+	\subsection{THM 1.11}
+	$ \mathbf{ THM:} $ Suppose S is an ordered set with the least-upper-bound property, $ B\subset S$, $ B $ is nonempty, and $ B $ is bounded below. Let $ L $ be the set of lower bounds of $ B $. Then 
+	\[
+	\sup(L) = \inf(B)
+	\]
+	That is to say that the supremum of the set of all lower bounds of B is equivalent to the infemum of B. 
+	\subsection{thm 1.20}
+	\begin{enumerate}[leftmargin=.5in]
+		\item $ \mathbf {ARCHIMEDIAN PROPERTY:} $ If $ x\in\R $, and $ x>0 $, then there exists a positive integer n s.t.
+		\[
+		nx>y
+		\]
+		
+		\item if $ x\in\R$, and $ x<y $, then there exists a $ p\in\Q $ s.t. $ x<p<y $.
+	\end{enumerate}
+	\subsection{Euclidean Spaces 1.36}
+	$ \mathbf{ DEF:} $ 
+\end{document}
