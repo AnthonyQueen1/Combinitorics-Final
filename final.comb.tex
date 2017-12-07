@@ -12,6 +12,7 @@
 \addtolength{\textheight}{1.75in}
 
 \usepackage{amsmath}
+\usepackage[thinlines]{easytable}
 \usepackage{upgreek}
 \usepackage{amsthm,amssymb}
 \usepackage{enumitem, mathtools}
@@ -39,10 +40,43 @@
 		\[ (1-x)^n  = 1 - \dbinom{n}{1}x + \dbinom{n}{2}x^2 - ... + (-1)^n\dbinom{n}{n}x^n = \sum\limits_{r=0}^n\dbinom{n}{r}(-1)^rx^r. \] \\
 	\textbf{THM 2.6.} If n is any positive integer, then 
 		\[ (1-x)^{-n}  = 1 + \dbinom{n}{1}x + \dbinom{n+1}{2}x^2 + \dbinom{n+2}{3}x^3 + ... = \sum\limits_{r=0}^{\infty}\dbinom{n+r-1}{r}x^r.\] \\ 
+	
+	\begin{TAB}(r,1cm,2cm)[5pt]{|c|c|c|}{|c|c|c|}% (rows,min,max)[tabcolsep]{columns}{rows}
+		Choose n from k & Number of ordered selections & Number of unordered selections \\ 
+		Repetitions not allowed & $ \dfrac{n!}{(n-k)!} $ & $\dbinom{n}{k}$ \\
+		Repetitions allowed & $n^k$ & $\dbinom{n+k-1}{k} $ \\
+	\end{TAB}	
+	
 	\section{CH3}
-	\subsection{Pairing within a set 3.1}
+	\subsection{Pairing within a set}
+	\textbf{Properties} \\
+	\text{(3.1)} The total number of different pairings of 2n objects is \[ \dfrac{(2n)!}{(2!)^nn!} \] 
+	\text{(3.2)} If distinct representatives do exist, then, for every value of k; any k sets contain between them at least k elements \\
+	\text{(3.3)}
+	In general, a sequence $(a_1,a_2,...,a_n),a_1 \geqslant a_2 \geqslant ... \geqslant a_n$, of non-negative integers can be a score sequence only if  \\
+	\text{(3.4)}
+	\[ a_1 + a_2 + ... + a_n = \dbinom{n}{2} \] 
+	and 
+	\text{(3.5)} \[ a_{n-r+1} + a_{n-r+2} + ... + a_n \geqslant \dbinom{r}{2}   \]
+	
+	
 	\textbf{THM 3.1.} Let S be a set of mn objects. Then S can be split up (partitioned) into n sets of m elements in 
-	\[ \frac{(mn)!}{(m!)^nn!} \]
+	\[ \dfrac{(mn)!}{(m!)^nn!} \] 
+	\textbf{THM 3.2.} If a graph has 2n verticies, each of degree $\geqslant$ n, then the graph has a perfect matching.
+	\subsection{Pairings between sets}
+	\textbf{THM 3.3.}(Philip Hall's theorem on distinct representatives). The sets $A_1,...,A_n$ possess a system of distinct representatives if and only if, for all k=$1,...,n$, any k $A_is$ contain at least k elements in their union.  \\
+	\textbf{THM Assignment.} This assignment problem has a solution if and only if there is no value of k for which there are k jobs with fewer than k suitable applicants between them.		\\
+	\textbf{THM Marriage.} Given a set of men and a set of women, each man makes a list of the women he is willing to marry. Then each man can be married off to a woman on his list if and only if, 
+	\[ 
+	(*)
+	\begin{cases} 
+	\text{for every value of k, any k lists contain in their union at least k names.}
+	\end{cases}
+	\]
+	\textbf{THM 3.4.} If r $<$ n, any r x n Latin rectangle can be extended to an (r+1) x n Latin rectangle. \\
+	\textbf{THM 3.5.}(Landau's theorem). the non-negative integers $a_1 \geqslant ... \geqslant a_n$ form the score sequence of a tournament if and only if conditions (3.4) and (3.5) are satisfied.  \\
+	\textbf{THM 3.6.}(The Harem Theorem). Let $w_1,...,w_n$ be non-negative integers, and suppose that men $M_1,...,M_n$ each makes a list of the women he is willing to marry. Then each $M_i$ can be married to $w_i$ women on his list if and only if, for any subset $\{i_1,...,i_r\}$ of $\{ 1,...,n \}$, the lists of men $M_{i_1}, ..., M_{i_r}$ contain in their union at least $w_{i_1}, ..., w_{i_r}$ names. \\
+	
 	
 	\section{CH4}
 	\section{CH5}
