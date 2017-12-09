@@ -163,7 +163,32 @@
 	\[
 		f(n,k) = \dbinom{n+k-1}{k}
 	\]
-	\section{CH5}
+	
+	\section{CH5 Principle of Inclusion-Exclusion}
+	
+	\subsection{General Idea}
+	Lets say we want to count the number of items that satisfy constraint $C_1$ and constraint $C_2$. We can just add $|C_1|$ and $|C_2|$, but (and this is easiest to imagine if you draw a Venn Diagram) then we need to subtract the value that is in  $|C_1 \cup C_2|$ because when we add the two, we have double counted the overlap. This is formalized for $r$ constraints in the next section.
+	
+	\subsection{Formula}
+		\[ \sum_{i=0}^{r} (-1)^{r-1}C(1,2,3 ,..., r)  \] 
+		\begin{center} Where $C(1,2,3,...,r)$ represents all combinations of $r$ constraints joined: $|C_1 \cup C_2 \cup C_3 \cup ... \cup C_r|$.  \end{center} 
+	
+	\subsection{Basic Applications of PIE\footnote{Solutions to these exercises are nicely explained: https://www.youtube.com/watch?v=Y0CYHMqomgI&t=473s}}
+		\textbf{P 5.1:}\\
+		Determine the number of numbers less that $n$ that are divisibly by 4, 3, and 7.\\
+		\textbf{P 5.2:}\\
+		How many solutions are there to $x_1 + x_2 + x_3 = 17$ where $x_i \leq 7 \forall i$\\
+		\textbf{P 5.3}\\
+		How many derangements of \textbf{DISCRETEMATHROCKS} have no consecutive pairs.\\
+		\textbf{P 5.4}\\
+		How many ways are there to arrange 15 flowers on five shelves such that each shelf has between 1 and 5 flowers?\\
+		\textbf{P 5.5}\\
+		How many ways are there to arrange the word \textbf{ARRANGEMENT} such that there are exactly two pairs of consecutive letters (i.e. RR, EE, etc)? At least three pairs of consecutive letters?\\
+		
+	\subsection{Rook Polinomials}
+		
+		
+	
 	\section{CH6}
 	\subsection{Block Designs 6.1}
 	\textbf{DEF:} $ (b,v,r,k,\lambda)-design $ \\
