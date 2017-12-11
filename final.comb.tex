@@ -16,7 +16,15 @@
 \usepackage{upgreek}
 \usepackage{amsthm,amssymb}
 \usepackage{enumitem, mathtools}
+\usepackage{hyperref}
 
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
 
 %\renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
 \newcommand{\R}{\mathbb{R}}
@@ -173,7 +181,8 @@
 		\[ \sum_{i=0}^{r} (-1)^{r-1}C(1,2,3 ,..., r)  \] 
 		\begin{center} Where $C(1,2,3,...,r)$ represents all combinations of $r$ constraints joined: $|C_1 \cup C_2 \cup C_3 \cup ... \cup C_r|$.  \end{center} 
 	
-	\subsection{Basic Applications of PIE\footnote{Solutions to these exercises are nicely explained: https://www.youtube.com/watch?v=Y0CYHMqomgI&t=473s}}
+	\subsection{Basic Applications of PIE}
+	\footnote{Solutions to these exercises are nicely explained: \href{https://www.youtube.com/watch?v=Y0CYHMqomgI&t=473s}{https://www.youtube.com/watch?v=Y0CYHMqomgI\&t=473s }}
 		\textbf{P 5.1:}\\
 		Determine the number of numbers less that $n$ that are divisibly by 4, 3, and 7.\\
 		\textbf{P 5.2:}\\
@@ -260,5 +269,5 @@
 	\textbf{THM 6.7: } A code will detect all sets of $ h $ or fewer errors if any	two words differ in at least $ (h + 1) $ places.\\\\
 	\textbf{THM 6.8: } A code will correct all sets of $ h $ or fewer errors if any two words differ in at least $ (2h + 1) $ places.
 	\section{CH7}
-	
+	\subsection{Introductory Remarks: }
 \end{document}
