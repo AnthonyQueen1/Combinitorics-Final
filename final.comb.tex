@@ -269,5 +269,20 @@
 	\textbf{THM 6.7: } A code will detect all sets of $ h $ or fewer errors if any	two words differ in at least $ (h + 1) $ places.\\\\
 	\textbf{THM 6.8: } A code will correct all sets of $ h $ or fewer errors if any two words differ in at least $ (2h + 1) $ places.
 	\section{CH7}
-	\subsection{Introductory Remarks: }
+	\subsection{Introductory Remarks }
+	Sphere packing, skipped
+	\subsection{Steiner Systems }
+	\textbf{Steiner Triple System: } $ (b,v,r,k,\lambda)-configuration $ in which $ k=3, \lambda=1 $ and $ b=v(v-1)/6 $. Example with $ v=9 $
+	\[
+		\{1,2,3\}\quad\{4,5,6\}\quad\{7,8,9\}\quad\{1,4,7\}\quad\{1,5,8\}\quad\{1,6,9\}\quad
+		\{2,4,8\}\quad\{2,5,9\}\quad\{2,6,7\}\quad\{3,4,9\}\quad\{3,5,7\}\quad\{3,6,8\}.
+	\]\\\\
+	\textbf{DEF: Steiner System } $ S(l,m,n) $ is a collection of  $ m $-element  subsets of an  $ n $-element  set $ B $ such that every $ l $-element  subset of $ B $ lies in exactly one of the  $ m $-element  sets. $ B $ is called the base set. \\
+	A Steiner Triple system is a $ S(1,3,n) $\\
+	The seven point plane is a $ S(2,3,7) $\\\\
+	\textbf{Formula: } the number of $ m $-element sets in an $ S(l,m,n) $ is 
+	\[
+		\binom{n}{l}/\binom{m}{l}
+	\]\\\\
+	\textbf{THM: }If a system $ S(l, m, n) $ exists, so does a system $ S(l -1,	m -	1, n -	1) $. Consequently, so does a system $ S(l -	2, m -	2, n -	2) $	and in general a system $ S(l -	u, m -	u, n -	u) $ for each $ u < l $.
 \end{document}
